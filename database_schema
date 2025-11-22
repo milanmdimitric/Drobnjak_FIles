@@ -1,0 +1,277 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// =======================
+/// Core dimensions
+/// =======================
+
+model Team {
+  id        String           @id @default(cuid())
+  name      String
+  college   String           @unique   // e.g. "Duke", "Houston"
+  conf      String?                     // primary conference
+  city      String?
+  createdAt DateTime         @default(now())
+
+  players   Player[]
+  seasons   TeamSeasonStat[] // Torvik-style season metrics
+}
+
+/// Single player (identity).
+/// Season-specific performance is in PlayerStat.
+model Player {
+  id            String   @id @default(cuid())
+  fullName      String
+  position      String    // "PG","G","G/F","F","PF/C","C"
+  heightCm      Int
+  weightKg      Int
+  classYear     String    // "Senior","Junior", ...
+  college       String
+  teamId        String?
+  team          Team?     @relation(fields: [teamId], references: [id])
+
+  /// External ID from Torvik (Players sheet, "Unnamed: 66")
+  bartTorvikId  Int?      @unique
+
+  /// High-level archetype (can mirror Torvik "role", e.g. "Pure PG","Stretch 4")
+  archetype     String?
+
+  // Aggregated season box stats (latest season snapshot for quick list)
+  ppg           Float     @default(0)
+  rpg           Float     @default(0)
+  apg           Float     @default(0)
+  pir           Float     @default(0)
+  blk           Float     @default(0)
+  stl           Float     @default(0)
+  fg3           Float     @default(0)
+
+  // Scouting/profile info
+  strengths     String?   // markdown
+  weaknesses    String?
+  improvement   String?
+  injuryHistory String?
+  estContract   String?
+  suitableTeams String?   // comma-separated tags (NBA abbreviations, etc.)
+
+  // AI/RAG fields
+  profileDocTsv String?   @db.Text            // raw concatenated text for BM25/tsv
+  embeddings    Vector?   @db.Vector(1536)    // pgvector (set dim to your embed model)
+
+  videos        Video[]
+  stats         PlayerStat[]
+  injuries      Injury[]
+  contracts     Contract[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  @@index([college])
+  @@index([classYear])
+  @@index([ppg, rpg, apg, pir])
+  @@index([embeddings], type: Brin) // ANN index created separately via SQL
+}
+
+/// =======================
+/// Season-level STATS
+/// =======================
+
+/// TeamSeasonStat maps almost 1:1 to the "Teams" sheet (Torvik / NCAA teams),
+/// so you can safely re-import future seasons by adding rows.
+model TeamSeasonStat {
+  id        String   @id @default(cuid())
+  teamId    String
+  season    String             // e.g. "2025-26"
+  conf      String?            // from sheet, redundant with Team.conf but denormalized
+
+  // From Teams sheet:
+  rank              Int?       // "rank"
+  record            String?    // "record" (raw "5-0" etc.)
+  adjoe             Float?     // adjusted offensive efficiency
+  oeRank            Int?       // "oe Rank"
+  adjde             Float?     // adjusted defensive efficiency
+  deRank            Int?       // "de Rank"
+  barthag           Float?     // "barthag"
+  projWins          Float?     // "proj. W"
+  projLosses        Float?     // "Proj. L"
+  projConfWins      Float?     // "Pro Con W"
+  projConfLosses    Float?     // "Pro Con L"
+  confRecord        String?    // "Con Rec."
+  sos               Float?     // overall strength of schedule
+  nonConfSos        Float?     // "ncsos"
+  confSos           Float?     // "consos"
+  projSos           Float?     // "Proj. SOS"
+  projNonConfSos    Float?     // "Proj. Noncon SOS"
+  projConfSos       Float?     // "Proj. Con SOS"
+  eliteSos          Float?     // "elite SOS"
+  eliteNonConfSos   Float?     // "elite noncon SOS"
+  oppAdjOff         Float?     // "Opp OE"
+  oppAdjDef         Float?     // "Opp DE"
+  oppProjAdjOff     Float?     // "Opp Proj. OE"
+  oppProjAdjDef     Float?     // "Opp Proj DE"
+  confAdjOff        Float?     // "Con Adj OE"
+  confAdjDef        Float?     // "Con Adj DE"
+  qualOff           Float?     // "Qual O"
+  qualDef           Float?     // "Qual D"
+  qualBarthag       Float?     // "Qual Barthag"
+  qualGames         Float?     // "Qual Games"
+  fun               Float?     // "FUN"
+  confPointsFor     Float?     // "ConPF"
+  confPointsAgainst Float?     // "ConPA"
+  confPossessions   Float?     // "ConPoss"
+  confAdjOE         Float?     // "ConOE"
+  confAdjDE         Float?     // "ConDE"
+  confSosRemain     Float?     // "ConSOSRemain"
+  confWinPct        Float?     // "Conf Win%"
+  wab               Float?     // "WAB"
+  wabRank           Int?       // "WAB Rk"
+  funRank           Int?       // "Fun Rk"
+  adjTempo          Float?     // "adjt"
+
+  createdAt DateTime @default(now())
+
+  team      Team     @relation(fields: [teamId], references: [id])
+
+  @@index([season])
+  @@index([conf])
+  @@unique([teamId, season])
+}
+
+/// PlayerStat now holds Torvik-style advanced stats from the "Players" sheet.
+/// Existing fields are preserved, additional ones are nullable + default(0)
+/// so the migration is non-breaking.
+model PlayerStat {
+  id        String   @id @default(cuid())
+  playerId  String
+  teamId    String?          // link season to Team
+  season    String           // e.g. "2025-26"
+
+  // BASIC box-score style aggregates (your original):
+  games     Int      @default(0) // maps to "GP"
+  minutes   Float    @default(0)
+  ppg       Float    @default(0)
+  rpg       Float    @default(0)
+  apg       Float    @default(0)
+  blk       Float    @default(0)
+  stl       Float    @default(0)
+  fg3       Float    @default(0)
+  pir       Float    @default(0)
+
+  // RATE/ADVANCED metrics from Players sheet:
+
+  /// "Min_per" – % of available minutes on floor
+  minPct    Float?   @default(0)
+
+  /// Shooting efficiency:
+  efg       Float?   @default(0)  // "eFG"
+  ts        Float?   @default(0)  // "TS_per"
+
+  /// Rebounding / passing / turnover rates:
+  orbPct    Float?   @default(0)  // "ORB_per"
+  drbPct    Float?   @default(0)  // "DRB_per"
+  astPct    Float?   @default(0)  // "AST_per"
+  tovPct    Float?   @default(0)  // "TO_per"
+
+  /// Shooting splits:
+  ftm       Float?   @default(0)  // "FTM"
+  fta       Float?   @default(0)  // "FTA"
+  ftPct     Float?   @default(0)  // "FT_per"
+
+  twoPM     Float?   @default(0)  // total 2P makes (if present in sheet)
+  twoPA     Float?   @default(0)
+  twoPPct   Float?   @default(0)  // 2P%
+
+  threePM   Float?   @default(0)  // 3PM
+  threePA   Float?   @default(0)  // 3PA
+  threePPct Float?   @default(0)  // 3P%
+
+  /// Usage / ratings:
+  usg       Float?   @default(0)  // "usg"
+  ortg      Float?   @default(0)  // "ORtg"
+  drtg      Float?   @default(0)  // you can fill from synergy or leave null
+
+  /// BPM-style metrics:
+  obpm      Float?   @default(0)  // "obpm"
+  dbpm      Float?   @default(0)  // "dbpm"
+  gbpm      Float?   @default(0)  // "gbpm"
+  ogbpm     Float?   @default(0)  // "ogbpm"
+  dgbpm     Float?   @default(0)  // "dgbpm"
+
+  /// Per-40 or per-game counting stats from Torvik:
+  mp        Float?   @default(0)  // "mp"
+  oreb      Float?   @default(0)  // "oreb"
+  dreb      Float?   @default(0)  // "dreb"
+  treb      Float?   @default(0)  // "treb"
+  astRaw    Float?   @default(0)  // "ast"
+  stlRaw    Float?   @default(0)  // "stl"
+  blkRaw    Float?   @default(0)  // "blk"
+  ptsRaw    Float?   @default(0)  // "pts"
+
+  /// Role labels and 3P volume
+  role          String?         // "role" (Stretch 4, Pure PG...)
+  threePPer100  Float? @default(0) // "3p/100?"
+
+  /// If you want to keep the raw Torvik player code per-season as well:
+  torvikRowId   Int?            // "Unnamed: 66"
+
+  createdAt DateTime @default(now())
+
+  player    Player   @relation(fields: [playerId], references: [id])
+  team      Team?    @relation(fields: [teamId], references: [id])
+
+  @@index([season])
+  @@index([teamId, season])
+  @@unique([playerId, season])
+}
+
+/// =======================
+/// Injuries / contracts / media
+/// =======================
+
+model Injury {
+  id          String   @id @default(cuid())
+  playerId    String
+  date        DateTime
+  title       String
+  severity    String?  // minor, medium, major
+  status      String?  // active, day-to-day, out
+  notes       String?
+  player      Player   @relation(fields: [playerId], references: [id])
+
+  @@index([date])
+}
+
+model Contract {
+  id          String   @id @default(cuid())
+  playerId    String
+  source      String?  // e.g. "HoopsHype", "BeatWriter", "Internal Estimate"
+  estType     String?  // "rookie-scale", "two-way", "G-League", etc.
+  estimate    String   // free text or "$X-YM over N years"
+  notes       String?
+  player      Player   @relation(fields: [playerId], references: [id])
+  createdAt   DateTime @default(now())
+}
+
+model News {
+  id        String   @id @default(cuid())
+  tag       String?
+  title     String
+  summary   String?
+  date      DateTime @default(now())
+  videoUrl  String?
+  playerId  String?
+  player    Player?  @relation(fields: [playerId], references: [id])
+}
+
+model Video {
+  id        String   @id @default(cuid())
+  playerId  String
+  title     String
+  url       String
+  player    Player   @relation(fields: [playerId], references: [id])
+  createdAt DateTime @default(now())
+}
