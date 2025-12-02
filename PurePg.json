@@ -1,0 +1,606 @@
+[
+  {
+    "player_name": "Themus Fulks",
+    "college": "UCF",
+    "season": "2025-26",
+    "class_year": "Senior",
+    "position": "PG",
+    "height_cm": 188,
+    "weight_kg": 84,
+    "archetype": "pure playmaking point guard with average size, high IQ, strong PnR control, historically streaky 3P shooter",
+    "summary": "Floor general tip plejmejkera koji pre svega organizuje napad, jako dobar u pick-and-rollu i kreaciji za druge, šut za tri istorijski slabiji ali u UCF fazi pokazuje napredak. Može da vodi ozbiljan tim u ligama gde se više ceni playmaking i IQ nego ekstremna atletika.",
+    "ratings_1_to_9": {
+      "shooting_3pt": 6,
+      "shooting_midrange": 7,
+      "rim_finishing": 6,
+      "on_ball_creation": 7,
+      "playmaking_passing": 8,
+      "pnr_ball_handler": 8,
+      "off_ball_movement": 7,
+      "perimeter_defense_poa": 6,
+      "team_defense_iq": 7,
+      "athleticism": 7,
+      "basketball_iq": 8,
+      "motor_competitiveness": 8
+    },
+    "stats_estimate_2025_26": {
+      "ppg": 10.0,
+      "apg": 7.5,
+      "rpg": 3.5,
+      "spg": 1.0,
+      "fg_pct": 0.42,
+      "three_pt_pct": 0.35,
+      "ft_pct": 0.79,
+      "mpg": 30
+    },
+    "offense_profile": {
+      "primary_ways_of_scoring": [
+        "pick-and-roll pull-up and drives",
+        "catch-and-shoot threes when defenders go under",
+        "transition drives and free throws"
+      ],
+      "shot_creation": "More of a playmaker than pure scorer; can create his own shot out of PnR and against closeouts but prefers to set up teammates.",
+      "pnr_usage": "High PnR volume; comfortable reading tag defender, hitting roller and weak-side shooter. Very good tempo control as handler.",
+      "finishing_at_rim": "Capable finisher with craft and floaters but not elite vs long rim protectors.",
+      "shooting_details": {
+        "three_point": "Functionally acceptable if left open; development area is volume and consistency more than touch.",
+        "midrange": "Solid pull-up threat when defenders go under screens.",
+        "free_throws": "Reliable enough to close games."
+      }
+    },
+    "defense_profile": {
+      "on_ball": "Solid POA defender vs most college guards; not a lockdown athlete but competes and uses IQ.",
+      "off_ball": "Understands rotations, tags roller, can stunt and recover. More reliable than flashy.",
+      "switch_ability": "Best vs 1s and some 2s; struggles switching up to bigger wings.",
+      "playmaking_defense": "Some steals by reading passes, not a gambling type."
+    },
+    "strengths": [
+      "High-level pick-and-roll decision making",
+      "True floor general mentality and game management",
+      "High assist numbers with good AST/TO ratio",
+      "Gets to the line and hits FTs at solid rate",
+      "Adaptable – uspešno se uklopio u više programa tokom karijere"
+    ],
+    "weaknesses": [
+      "Historijski ispodprosečan šut za tri na većem volumenu",
+      "Nema elitnu veličinu ni eksplozivnost za pro nivo",
+      "Nije prirodni high-volume scorer",
+      "Finishing kroz duge i fizičke rim protectore je limitiran"
+    ],
+    "development_projection": {
+      "months_12": "Stabilan 10–12 PPG i 7–8 APG PG na college nivou, sa šutem za tri oko 34–35% na boljem volumenu.",
+      "months_24": "Početak profesionalne karijere kao startni ili glavni rotacioni PG u srednje jakim evropskim ligama, sa reputacijom pouzdanog organizatora.",
+      "months_36": "Potencijalno high-level floor general u ligama tipa ABA, Poljska, Belgija/Holandija, možda BCL nivo ako šut ostane 35–37% i zadrži kontrolu nad igrom."
+    },
+    "ideal_team_fit": {
+      "best_systems": [
+        "Structured halfcourt offenses with heavy pick-and-roll usage",
+        "Teams with good shooters around him to punish his PnR reads",
+        "Coaches who cene disciplinu i kontrolu ritma"
+      ],
+      "poor_fits": [
+        "Teams that require PG to be primary 18–20 PPG scorer",
+        "Switch-heavy defenses where his size is big liability",
+        "Chaotic, low-spacing systems bez jasne PnR strukture"
+      ]
+    }
+  },
+  {
+    "player_name": "Braden Smith",
+    "college": "Purdue",
+    "season": "2025-26",
+    "class_year": "Junior",
+    "position": "PG",
+    "height_cm": 183,
+    "weight_kg": 82,
+    "archetype": "elite high-IQ point guard and shooter, undersized but very skilled PnR maestro",
+    "summary": "Jedan od najkompletnijih plejmejkera u NCAA: vrhunski šuter, elitni pick-and-roll decision-maker, vrlo visok košarkaški IQ. Nizak, ali čvrst. Prototip evropskog organizatora za visok nivo, uz ograničenja u odbrani zbog visine.",
+    "ratings_1_to_9": {
+      "shooting_3pt": 9,
+      "shooting_midrange": 8,
+      "rim_finishing": 6,
+      "on_ball_creation": 8,
+      "playmaking_passing": 9,
+      "pnr_ball_handler": 9,
+      "off_ball_movement": 8,
+      "perimeter_defense_poa": 6,
+      "team_defense_iq": 8,
+      "athleticism": 6,
+      "basketball_iq": 9,
+      "motor_competitiveness": 10
+    },
+    "stats_estimate_2025_26": {
+      "ppg": 13.0,
+      "apg": 7.5,
+      "rpg": 5.0,
+      "spg": 1.5,
+      "fg_pct": 0.48,
+      "three_pt_pct": 0.43,
+      "ft_pct": 0.87,
+      "mpg": 32
+    },
+    "offense_profile": {
+      "primary_ways_of_scoring": [
+        "high-volume three-point shooting, both catch-and-shoot and off-the-dribble",
+        "pull-up jumpers out of pick-and-roll",
+        "craft finishes and floaters in the lane"
+      ],
+      "shot_creation": "Very good at creating his own jumper with change of pace and PnR usage; not an isolation athlete but elite in structured actions.",
+      "pnr_usage": "One of the best PnR handlers in college; reads tags, weak side and drop coverage at near-pro level.",
+      "finishing_at_rim": "Below-the-rim finisher who relies on angles, craft and timing; good but not elite vs length.",
+      "shooting_details": {
+        "three_point": "Legit elite shooter above 40% on high volume, with range and quick release.",
+        "midrange": "Strong pull-up game, especially when defenses chase him off the line.",
+        "free_throws": "Very reliable, can close games at the line."
+      }
+    },
+    "defense_profile": {
+      "on_ball": "Competitive and smart but limited by size; can stay in front of many college guards, will struggle vs elite athletes and bigger guards.",
+      "off_ball": "High IQ, good positioning, anticipates actions and can take charges.",
+      "switch_ability": "Limited to 1s and some small 2s; mismatch vs wings.",
+      "playmaking_defense": "More positional than gambling; some steals by anticipation, good defensive rebounding for size."
+    },
+    "strengths": [
+      "Elite three-point shooter on volume",
+      "Top-tier pick-and-roll decision maker",
+      "Very low turnover rate relative to usage",
+      "High feel for the game, leadership and toughness",
+      "Can play on or off the ball thanks to shooting"
+    ],
+    "weaknesses": [
+      "Height and length are significant constraints at pro level",
+      "Rim finishing versus elite shot blockers will be challenging",
+      "Can be targeted in switches defensively",
+      "Relies heavily on system and spacing – manje efektan u haotičnim ekipama"
+    },
+    "development_projection": {
+      "months_12": "Završava NCAA karijeru kao jedan od najboljih PnR plejmejkera i šutera u ligi, profilisan kao pro-ready floor general.",
+      "months_24": "Početni pro nivo: starter ili glavni rotacioni PG u srednje jakim evropskim ligama, visoka efikasnost u PnR-u i šutu.",
+      "months_36": "Moguć EuroCup/BCL starter ili visokominutni backup u vrlo jakim ligama, ako defanzivno preživi i zadrži 40%+ šut za tri."
+    },
+    "ideal_team_fit": {
+      "best_systems": [
+        "Structured European-style offenses with heavy PnR usage",
+        "Teams with strong bigs and shooters koji mogu da koriste njegov playmaking",
+        "Coaches who value discipline and high IQ over raw athleticism"
+      ],
+      "poor_fits": [
+        "Switch-heavy defenses on highest European level",
+        "Teams that expect PG to be primary rim-attack scorer",
+        "Low-spacing, chaotic teams without clear offensive structure"
+      ]
+    }
+  },
+  {
+    "player_name": "Donovan Dent",
+    "college": "UCLA",
+    "season": "2025-26",
+    "class_year": "Junior",
+    "position": "PG",
+    "height_cm": 188,
+    "weight_kg": 82,
+    "archetype": "explosive downhill point guard and defensive guard with questionable 3P shooting",
+    "summary": "Eksplozivan slasher PG sa odličnom odbranom i energijom. Najbolji kada napada reket i igra agresivnu POA odbranu. Najveći upitnik za pro nivo je stabilnost šuta za tri i halfcourt organizacija na najvišem nivou.",
+    "ratings_1_to_9": {
+      "shooting_3pt": 5,
+      "shooting_midrange": 7,
+      "rim_finishing": 7,
+      "on_ball_creation": 7,
+      "playmaking_passing": 7,
+      "pnr_ball_handler": 7,
+      "off_ball_movement": 6,
+      "perimeter_defense_poa": 7,
+      "team_defense_iq": 7,
+      "athleticism": 8,
+      "basketball_iq": 7,
+      "motor_competitiveness": 9
+    },
+    "stats_estimate_2025_26": {
+      "ppg": 12.0,
+      "apg": 4.5,
+      "rpg": 3.5,
+      "spg": 1.5,
+      "fg_pct": 0.48,
+      "three_pt_pct": 0.33,
+      "ft_pct": 0.78,
+      "mpg": 30
+    },
+    "offense_profile": {
+      "primary_ways_of_scoring": [
+        "downhill drives to the rim",
+        "floaters and short mid-range pull-ups",
+        "transition attacks off steals or quick outlets"
+      ],
+      "shot_creation": "Good self-creator versus average defenders, especially attacking closeouts and in PnR when he can turn the corner.",
+      "pnr_usage": "Uses PnR to get downhill; capable passer to roller and spot-up shooters but not an elite manipulator like pure floor generals.",
+      "finishing_at_rim": "Very good at college level vs most bigs, uses strength and body control, but relies more on speed than length.",
+      "shooting_details": {
+        "three_point": "Streaky; currently below pro-ideal, needs work on consistency and confidence.",
+        "midrange": "Solid pull-up and floater package from 3–5 meters.",
+        "free_throws": "Respectable FT shooter; može da kazni faulove."
+      }
+    },
+    "defense_profile": {
+      "on_ball": "Aggressive, physical and quick laterally, can disrupt opposing PGs and pressure full court.",
+      "off_ball": "Good anticipation in passing lanes, rotates with energy, can over-gamble at times.",
+      "switch_ability": "Best vs 1s and some 2s; undersized for wings.",
+      "playmaking_defense": "Generates steals and deflections; može pokrenuti tranziciju iz odbrane."
+    },
+    "strengths": [
+      "Explosive first step and strong downhill game",
+      "High motor and defensive intensity",
+      "Solid PnR passing and reading rollers",
+      "Can change momentum of the game with energy",
+      "Comfortable in up-tempo systems and in transition"
+    ],
+    "weaknesses": [
+      "Below-average three-point shooter for pro PG standards",
+      "Not a pure control-type PG, decision making još varira",
+      "Height and length limit switching and finishing vs elite size",
+      "Može biti streaky u napadu ako se oslanja samo na ulaz"
+    },
+    "development_projection": {
+      "months_12": "Stabilan starter ili ključni guard u UCLA, 11–14 PPG i 4–5 APG, uz fokus na poboljšanje šuta za tri.",
+      "months_24": "Rani pro nivo kao rotacioni PG/CG u srednjim evropskim ligama, pre svega kao slasher/defensive guard.",
+      "months_36": "Ako šut za tri dođe do 35–37%, može biti starter u solidnim evropskim ligama i BCL/EuroCup rotacioni igrač; bez šuterskog skoka ostaje spark-plug guard i defanzivni specijalista."
+    },
+    "ideal_team_fit": {
+      "best_systems": [
+        "Up-tempo teams that push transition and value guard pressure",
+        "Defensive-minded coaches who cene agresivnost i POA odbranu",
+        "Teams with good spacing and shooters da otvore reket za njegove ulaze",
+        "Two-guard lineups gde drugi bek može biti stabilniji šuter/organizator"
+      ],
+      "poor_fits": [
+        "Teams requiring elite 3P shooting from the PG position",
+        "Slow-paced halfcourt-only offenses bez tranzicije",
+        "Systems that demand heavy switch defense against larger wings"
+      ]
+    }
+  },
+  {
+    "player_name": "Tamin Lipsey",
+    "college": "Iowa State",
+    "season": "2025-26",
+    "class_year": "Junior",
+    "position": "PG",
+    "height_cm": 185,
+    "weight_kg": 93,
+    "archetype": "defense-first, physically strong point guard with high IQ and limited 3P shooting",
+    "summary": "Vrlo snažan, tough two-way PG, jedan od najboljih defanzivnih plejmejkera u NCAA. Napada reket fizički, dobro kreira iz ulaza, ima visok košarkaški IQ. Najveći limitator je šut za tri i free throw mehanika.",
+    "ratings_1_to_9": {
+      "shooting_3pt": 4,
+      "shooting_midrange": 6,
+      "rim_finishing": 7,
+      "on_ball_creation": 6,
+      "playmaking_passing": 7,
+      "pnr_ball_handler": 6,
+      "off_ball_movement": 5,
+      "perimeter_defense_poa": 9,
+      "team_defense_iq": 9,
+      "athleticism": 7,
+      "basketball_iq": 8,
+      "motor_competitiveness": 9
+    },
+    "stats_estimate_2025_26": {
+      "ppg": 14.0,
+      "apg": 5.5,
+      "rpg": 5.0,
+      "spg": 2.5,
+      "fg_pct": 0.48,
+      "three_pt_pct": 0.33,
+      "ft_pct": 0.70,
+      "mpg": 32
+    },
+    "offense_profile": {
+      "primary_ways_of_scoring": [
+        "physical drives into the paint",
+        "short pull-ups and floaters",
+        "post-up vs smaller guards in some sets"
+      ],
+      "shot_creation": "Creates advantages primarily with strength and paint touches, less with pure shake or step-backs.",
+      "pnr_usage": "Functional PnR handler who can hit roller and simple kick-outs; more north-south than manipulator.",
+      "finishing_at_rim": "Very strong through contact, good balance and body control. Effective vs most college bigs.",
+      "shooting_details": {
+        "three_point": "Below ideal, around low 30s; defenses dare him to shoot and go under.",
+        "midrange": "Decent from midrange when balanced.",
+        "free_throws": "FT% is concern – mora da popravi mehaniku za pro nivo."
+      }
+    },
+    "defense_profile": {
+      "on_ball": "Elite POA defender; strong, physical, excellent stance and slides, bothers ball handlers consistently.",
+      "off_ball": "Excellent anticipation and team defense, high steal rate, very active hands.",
+      "switch_ability": "Can guard 1–2 and some 3s thanks to strength, but limited vs taller wings at pro level.",
+      "playmaking_defense": "Generates turnovers, deflections, and leads fast breaks from steals."
+    },
+    "strengths": [
+      "Elite point-of-attack defense",
+      "Strong, physical guard with great motor",
+      "High defensive IQ and anticipation",
+      "Good PnR passing and decision making",
+      "Toughness and leadership profile"
+    ],
+    "weaknesses": [
+      "Inconsistent three-point shooting",
+      "Below-average FT shooting for a guard",
+      "Limited size vs pro-level wings",
+      "Not a high-level isolation creator",
+      "Offense heavily driven by paint touches, less by pull-up shooting"
+    ],
+    "development_projection": {
+      "months_12": "Ostaje defanzivni stub Iowa State-a, uz pokušaj da podigne 3PT i FT procente.",
+      "months_24": "Ulazak u profesionalne lige kao defense-first PG u ABA, ProA, LEB Oro, Poljska itd.",
+      "months_36": "Ako šut dođe do 35%+ za tri i stabilnije FT, može biti startni PG u jakim evropskim ligama; bez šuterskog napretka ostaje high-level defanzivni specijalista u srednjim ligama."
+    },
+    "ideal_team_fit": {
+      "best_systems": [
+        "Defensive-minded teams that build identity on pressure and toughness",
+        "Offenses where PG can attack the paint и ima šutere oko sebe",
+        "Coaches who value low-turnover, defense-first guards"
+      ],
+      "poor_fits": [
+        "Teams that require elite 3P shooting from PG",
+        "Five-out systems where non-shooting PG is huge spacing liability",
+        "Squads expecting PG to be high-usage isolation scorer"
+      ]
+    }
+  },
+  {
+    "player_name": "Maurice Odum",
+    "college": "Arizona State",
+    "season": "2025-26",
+    "class_year": "Underclassman",
+    "position": "CG",
+    "height_cm": 191,
+    "weight_kg": 82,
+    "archetype": "athletic scoring combo guard with downhill slashing and developing shooting/playmaking",
+    "summary": "Mladi, eksplozivan combo guard koji može igrati i 1 i 2. Najjači je kao slasher i transition napadač, uz perspektivu da razvije dobar šut i PnR igru. Projekat sa visokim upside-om ako šut i decision-making napreduju.",
+    "ratings_1_to_9": {
+      "shooting_3pt": 5,
+      "shooting_midrange": 7,
+      "rim_finishing": 7,
+      "on_ball_creation": 7,
+      "playmaking_passing": 7,
+      "pnr_ball_handler": 7,
+      "off_ball_movement": 7,
+      "perimeter_defense_poa": 6,
+      "team_defense_iq": 6,
+      "athleticism": 8,
+      "basketball_iq": 7,
+      "motor_competitiveness": 8
+    },
+    "stats_estimate_2025_26": {
+      "ppg": 11.0,
+      "apg": 2.8,
+      "rpg": 3.0,
+      "spg": 1.0,
+      "fg_pct": 0.44,
+      "three_pt_pct": 0.34,
+      "ft_pct": 0.78,
+      "mpg": 25
+    },
+    "offense_profile": {
+      "primary_ways_of_scoring": [
+        "downhill drives attacking closeouts",
+        "mid-range pull-ups",
+        "transition scoring"
+      ],
+      "shot_creation": "Capable of creating his own shot vs most college defenders, especially in semi-transition and against tilted defenses.",
+      "pnr_usage": "Functional PnR handler; can improve at reading second and third level of defense.",
+      "finishing_at_rim": "Good vertical pop and body control, can finish with contact; needs more craft vs set rim protectors.",
+      "shooting_details": {
+        "three_point": "Developing; mechanics okay but consistency not proven on high volume.",
+        "midrange": "Comfortable with pull-ups and rhythm shots after 1–2 dribbles.",
+        "free_throws": "Solid base, suggests potential for shooting improvement."
+      }
+    },
+    "defense_profile": {
+      "on_ball": "Good athlete capable of staying in front of most guards when engaged.",
+      "off_ball": "Still learning rotations and consistency; can use length better in passing lanes.",
+      "switch_ability": "Can guard 1s and smaller 2s; may grow into guarding some bigger wings as strength improves.",
+      "playmaking_defense": "Some steals by activity and athleticism rather than pure anticipation."
+    },
+    "strengths": [
+      "Athletic downhill slasher",
+      "Combo-guard versatility (može igrati i 1 i 2)",
+      "Good mid-range and pull-up potential",
+      "High motor and competitiveness",
+      "Upside as both scorer and secondary creator"
+    ],
+    "weaknesses": [
+      "Three-point shooting consistency is unproven",
+      "Decision-making i čitanje kompleksnijih PnR situacija još su u razvoju",
+      "Još nema definisanu rolu (PG vs SG) na pro nivou",
+      "Defanzivna disciplina ponekad oscilira"
+    ],
+    "development_projection": {
+      "months_12": "Stabilizacija uloge u Arizona State kao rotation guard, sa fokusom na šut i PnR reads.",
+      "months_24": "Rani pro nivo kao scoring combo guard u ligama srednje snage, pre svega kao energija i slasher.",
+      "months_36": "Ako šut dođe u rang 36–38% za tri i decision-making se popravi, može biti startni guard u dobrim evropskim ligama; u suprotnom ostaje 'spark plug' rotacioni igrač."
+    },
+    "ideal_team_fit": {
+      "best_systems": [
+        "Teams that play uptempo and value guard drives",
+        "Squads with structured PnR sets but slobodom za combo guardove",
+        "Rosters that already have stabilnog 'pure PG' pa on može više da bude scorer"
+      ],
+      "poor_fits": [
+        "Timovi koji očekuju od njega da bude čist, high-level floor general odmah",
+        "Sistemi bez spacinga gde se guši njegov ulaz",
+        "Ekipe koje zahtevaju elitnog šutera na bek poziciji"
+      ]
+    }
+  },
+  {
+    "player_name": "Day Day Thomas",
+    "college": "Cincinnati",
+    "season": "2025-26",
+    "class_year": "Junior",
+    "position": "CG",
+    "height_cm": 183,
+    "weight_kg": 82,
+    "archetype": "high-motor defensive combo guard and slasher with streaky shooting",
+    "summary": "Eksplozivan combo guard sa brutalnom energijom u odbrani, sjajnom brzinom i dobrim downhill scoringom. Najveća vrednost dolazi iz odbrane i tranzicije. Šut za tri i playmaking kao primary PG još uvek nisu na elitnom nivou.",
+    "ratings_1_to_9": {
+      "shooting_3pt": 5,
+      "shooting_midrange": 6,
+      "rim_finishing": 8,
+      "on_ball_creation": 7,
+      "playmaking_passing": 6,
+      "pnr_ball_handler": 6,
+      "off_ball_movement": 6,
+      "perimeter_defense_poa": 9,
+      "team_defense_iq": 8,
+      "athleticism": 9,
+      "basketball_iq": 7,
+      "motor_competitiveness": 10
+    },
+    "stats_estimate_2025_26": {
+      "ppg": 13.0,
+      "apg": 3.5,
+      "rpg": 2.8,
+      "spg": 1.8,
+      "fg_pct": 0.45,
+      "three_pt_pct": 0.34,
+      "ft_pct": 0.76,
+      "mpg": 28
+    },
+    "offense_profile": {
+      "primary_ways_of_scoring": [
+        "transition layups and attacks",
+        "downhill drives in semi-transition and against closeouts",
+        "pull-up and midrange jumpers when hot"
+      ],
+      "shot_creation": "Capable of creating his own shot vs many college defenders through speed and aggression, less through craft.",
+      "pnr_usage": "Can run PnR but more as a scoring guard than as pure playmaker.",
+      "finishing_at_rim": "Very strong; explosive first step and good body control, thrives vs rotating defenses.",
+      "shooting_details": {
+        "three_point": "Approximately low-to-mid 30s; streaky and still developing.",
+        "midrange": "Capable pull-up shooter when in rhythm.",
+        "free_throws": "Solid, no major red flag."
+      }
+    },
+    "defense_profile": {
+      "on_ball": "Elite defensive intensity, pressures the ball 94 feet, great lateral quickness.",
+      "off_ball": "Good anticipation of passing lanes, can over-gamble but overall impact is positive.",
+      "switch_ability": "Can defend 1s and some 2s; undersized for bigger wings.",
+      "playmaking_defense": "Generates steals and deflections, fuels transition game."
+    },
+    "strengths": [
+      "Top-tier defensive motor and on-ball pressure",
+      "Explosive north-south athlete",
+      "Very good transition scorer",
+      "Emotional and energetski lider na parketu",
+      "Fits modern role of energy guard off the bench"
+    ],
+    "weaknesses": [
+      "Three-point shooting not yet stable enough for primary guard role at high pro level",
+      "Not a pure floor general; playmaking is secondary",
+      "Height limits versatility in switch-heavy schemes",
+      "Može da se zaleti u zatvorene linije i forsira teške šuteve kad je previše napaljen"
+    ],
+    "development_projection": {
+      "months_12": "Postaje jedan od ključnih guardova Cincinnati tima, 12–14 PPG, ~2 SPG i definisana uloga 'two-way energy guard'.",
+      "months_24": "Rani pro nivo u srednjim ligama kao high-energy combo guard i defanzivni specijalista.",
+      "months_36": "Ako šut za tri poraste na 36–38% i playmaking se popravi, može biti starter u boljim ligama i BCL ekipama; ako ne, ostaje vrlo vredan rotacioni 'stopper' guard."
+    },
+    "ideal_team_fit": {
+      "best_systems": [
+        "High-tempo, defense-first teams that press and run",
+        "Squads that need energy guard to change rhythm from the bench",
+        "Lineups with another, more stable playmaker so he can focus na odbranu i napad"
+      ],
+      "poor_fits": [
+        "Teams expecting a tall, switchable PG/SG defender vs 1–3",
+        "Systems that require elite C&S shooting from both guards",
+        "Very slow, halfcourt-only offenses"
+      ]
+    }
+  },
+  {
+    "player_name": "Tarence Guinyard",
+    "college": "Duquesne",
+    "season": "2025-26",
+    "class_year": "Sophomore",
+    "position": "SG",
+    "height_cm": 193,
+    "weight_kg": 86,
+    "archetype": "athletic two-way slashing wing guard with developing shooting and decision-making",
+    "summary": "Snažan, eksplozivan krilni bek sa velikim upside-om: može da napada obruč, da brani više pozicija i ima fizičke alate za modernog 3&D/driver igrača. Šut za tri i decision-making su ključne razvojne tačke.",
+    "ratings_1_to_9": {
+      "shooting_3pt": 5,
+      "shooting_midrange": 7,
+      "rim_finishing": 8,
+      "on_ball_creation": 7,
+      "playmaking_passing": 5,
+      "pnr_ball_handler": 5,
+      "off_ball_movement": 7,
+      "perimeter_defense_poa": 8,
+      "team_defense_iq": 7,
+      "athleticism": 9,
+      "basketball_iq": 6,
+      "motor_competitiveness": 8
+    },
+    "stats_estimate_2025_26": {
+      "ppg": 10.0,
+      "apg": 2.0,
+      "rpg": 3.5,
+      "spg": 1.2,
+      "fg_pct": 0.44,
+      "three_pt_pct": 0.34,
+      "ft_pct": 0.75,
+      "mpg": 24
+    },
+    "offense_profile": {
+      "primary_ways_of_scoring": [
+        "downhill drives attacking gaps",
+        "midrange pull-ups and athletic finishes",
+        "transition scoring after steals or long rebounds"
+      ],
+      "shot_creation": "Can create his own shot versus many defenders through speed and strength, particularly in straight-line drives and simple pull-ups.",
+      "pnr_usage": "Limited as primary PnR handler for now; more effective as secondary creator or attacking off second-side actions.",
+      "finishing_at_rim": "Very good; explosive leaper with strong body, comfortable finishing through contact and in traffic.",
+      "shooting_details": {
+        "three_point": "Developing; around 30–34% range, streaky but promising if mechanics stabilize.",
+        "midrange": "Comfortable rising up into pull-ups from 2–3 dribbles.",
+        "free_throws": "Solid FT touch, supports upside as shooter."
+      }
+    },
+    "defense_profile": {
+      "on_ball": "Potentially high-level wing defender, with length, lateral quickness and strength to guard 1–3 at college level.",
+      "off_ball": "Still learning rotations, can over-gamble but tools allow for good recovery.",
+      "switch_ability": "Can switch across 1–3, maybe even smaller 4s at some pro levels.",
+      "playmaking_defense": "Generates steals from anticipation and athletic closeouts."
+    },
+    "strengths": [
+      "High-level athleticism and physical tools",
+      "Two-way potential as slasher and defender",
+      "Ability to pressure the rim and draw help",
+      "Solid midrange scoring toolkit",
+      "Frame and length ideal for modern wing guard roles"
+    ],
+    "weaknesses": [
+      "Inconsistent three-point shooting",
+      "Raw decision-making as on-ball creator",
+      "Still learning halfcourt discipline and when to slow down",
+      "Not yet a reliable primary playmaker"
+    ],
+    "development_projection": {
+      "months_12": "Postaje važan rotacioni igrač i potencijalni starter u Duquesne, uz rast uloge kao slasher/defender.",
+      "months_24": "Početak pro karijere kao athletic 3&D/slashing wing u srednjim ligama (Belgija/Holandija, Poljska, ABA2 itd.).",
+      "months_36": "Ako šut za tri ode na 35–37% i decision-making napreduje, može postati starter u jakim evropskim ligama; bez šuterskog skoka ostaje vredan role player kao defanzivac i slasher."
+    },
+    "ideal_team_fit": {
+      "best_systems": [
+        "Switch-heavy defensive schemes that use wings to guard 1–3",
+        "Transition-oriented offenses that run off stops",
+        "Teams with strong primary PG so he can focus on slashing and defense"
+      ],
+      "poor_fits": [
+        "Teams that need pure shooters at the 2/3 spot",
+        "Systems that require wing to be primary PnR creator",
+        "Very slow, halfcourt-only offenses without much transition play"
+      ]
+    }
+  }
+]
